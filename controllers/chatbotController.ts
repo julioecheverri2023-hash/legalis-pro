@@ -7,7 +7,7 @@ export const chatbotController = {
     try {
       const ai = new GoogleGenAI({ apiKey: (process.env as any).API_KEY });
       const systemInstruction = `
-        Eres 'Legalis AI', un asistente experto para técnicos legales.
+        Eres 'Nestor AI', un asistente experto para técnicos legales.
         Tu objetivo es ayudar al usuario a recordar tareas, audiencias y gestionar sus casos.
         Aquí tienes los casos actuales: ${JSON.stringify(context)}.
         

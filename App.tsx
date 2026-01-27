@@ -44,10 +44,10 @@ const Sidebar = ({ isOpen, toggle }: { isOpen: boolean, toggle: () => void }) =>
       `}>
         <div className="p-6 flex items-center justify-between border-b border-slate-800/50">
           <div className="flex items-center gap-2">
-            <div className="p-2 bg-blue-600 rounded-lg">
-              <Gavel size={20} className="text-white" />
+            <div className="p-2 bg-slate-100 rounded-lg shadow-inner">
+              <Gavel size={20} className="text-slate-900" />
             </div>
-            <h1 className="text-xl font-bold tracking-tight text-white italic">LEGALIS <span className="text-blue-500">PRO</span></h1>
+            <h1 className="text-xl font-bold tracking-tight text-white italic">NESTOR <span className="text-blue-500">LEGAL</span></h1>
           </div>
           <button onClick={toggle} className="lg:hidden text-slate-400 hover:text-white">
             <X size={24} />
@@ -70,6 +70,18 @@ const Sidebar = ({ isOpen, toggle }: { isOpen: boolean, toggle: () => void }) =>
             </Link>
           ))}
         </nav>
+
+        <div className="absolute bottom-10 left-0 right-0 px-6">
+          <div className="p-5 bg-gradient-to-br from-slate-800/50 to-slate-900/50 rounded-2xl border border-slate-700/50 backdrop-blur-sm flex flex-col items-center gap-4">
+            <div className="w-24 h-24 overflow-hidden rounded-xl bg-white shadow-2xl p-1">
+              <img src="/assets/nestor_logo.png" alt="Nestor Legal" className="w-full h-full object-contain" />
+            </div>
+            <div className="text-center">
+              <p className="text-[10px] font-bold text-slate-500 uppercase tracking-widest leading-none mb-1">Firma Virtual</p>
+              <p className="text-sm font-black text-white italic">NESTOR LEGAL</p>
+            </div>
+          </div>
+        </div>
       </aside>
     </>
   );
