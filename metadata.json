@@ -1,0 +1,7 @@
+{
+  "name": "Legalis - Gestión Técnico Legal",
+  "description": "Una plataforma integral para la gestión de expedientes penales, inmobiliarios y financieros, diseñada con arquitectura robusta y enfoque móvil-primero.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
